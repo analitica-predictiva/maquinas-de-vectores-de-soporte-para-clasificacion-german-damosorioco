@@ -155,10 +155,10 @@ def pregunta_01():
     df = pd.read_csv('german.csv')
 
     # Asigne la columna `default` a la variable `y`.
-    y = df['default']
+    y = df['default'].copy()
 
     # Asigne una copia del dataframe `df` a la variable `X`.
-    X = df.copy(deep= True)
+    X = df.copy()
 
     # Remueva la columna `default` del DataFrame `X`.
     X.drop('default', axis= 1, inplace= True)
