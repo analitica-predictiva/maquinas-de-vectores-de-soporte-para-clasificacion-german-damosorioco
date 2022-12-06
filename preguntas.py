@@ -224,7 +224,7 @@ def pregunta_03():
     pipeline = Pipeline(
         steps=[
             ("columnTransformer", ColumnTransformer),
-            ("SVC", SVC),
+            ("SVC", SVC()),
         ],
     )
 
